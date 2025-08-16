@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std; 
-*/
+/*
 
 I think there will be at least 3 vector arrays, possibly 4 depending on how I want to handle "Carry over"
 
@@ -14,7 +14,7 @@ I think there will be at least 3 vector arrays, possibly 4 depending on how I wa
   
   each step multiplies top and bottom to get product, the product moves to top and the bottom goes down by one
   
-/*
+*/
 int main {
 
 return 0;
