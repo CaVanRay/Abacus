@@ -13,6 +13,12 @@ I think there will be at least 3 vector arrays, possibly 4 depending on how I wa
   Each vector contains the individual digits of each number seperately so as to calculate much larger numbers
   
   each step multiplies top and bottom to get product, the product moves to top and the bottom goes down by one
+
+For the carry over function it will be something like this:
+if(carryover exists) {
+  product[#] = product[#] + carryover;    will have to find a way to specify which item in product vector.
+  carryover = NULL;
+}
   
 */
 int main {
