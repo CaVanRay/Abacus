@@ -18,6 +18,8 @@ For the carry over function it will be something like this:
 if(carryover exists) {
   product[#] = product[#] + carryover;    will have to find a way to specify which item in product vector.
   carryover = NULL;
+
+  note to self: look up what the upper limit on items in a vector array would be.'
 }
   
 */
