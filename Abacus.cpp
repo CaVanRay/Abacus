@@ -5,10 +5,10 @@ using namespace std;
 
 I think there will be at least 3 vector arrays, possibly 4 depending on how I want to handle "Carry over"
 
-  Carry over    :[ ]
-  Top Vector    :[ , ,]
-  Bottom Vector :[ , ,]
-  Product       :[ , ,]
+  Carry over          :[ ]
+  Top Vector          :[ , ,]
+  Bottom Vector       :[ , ,]
+  Product Vector      :[ , ,]
 
   Each vector contains the individual digits of each number seperately so as to calculate much larger numbers
   
@@ -48,10 +48,13 @@ BotSize = Bot.size()
 and you use these to run through the for loops again
 NOTE: Product[] Placemnet matches Top[] at start and increments by one! this avoids adding 0's
 
-Product[0] = Top[0] * Bot[0] 
-Product[1] = Carry + (Top[0] * Bot[1])
-Product[0] = Product[0] + (Top[1] * Bot[0])
-Product[1] = Product[1] + Carry + (Top[1] * Bot[1])
+Product[0] = Product[0] + Carry + (Top[0] * Bot[0]) 
+Product[1] = Product[1] + Carry + (Top[0] * Bot[1])
+Product[1] = Product[1] + Carry + (Top[1] * Bot[0])
+Product[2] = Product[2] + Carry + (Top[1] * Bot[1])
+Product[2] = Product[2] + Carry + (Top[2] * Bot[0])
+Product[3] = Product[3] + carry + (Top[2] * Bot[1])
+
 
 625
  25
