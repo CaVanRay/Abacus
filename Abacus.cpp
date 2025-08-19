@@ -21,7 +21,8 @@ if(carryover exists) {
 
 Top[0] * Bot[0]
 Top[0] * Bot[1]
-
+Top[1] * Bot[0]
+Top[1] * Bot[1]
 
 }
   
