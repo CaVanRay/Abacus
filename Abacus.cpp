@@ -23,14 +23,33 @@ Simple outline of how this will work:
 
 Product[0] = Top[0] * Bot[0] 
 Product[1] = Carry + (Top[0] * Bot[1])
-Product[0] = Product[0] + Carry + (Top[1] * Bot[0])
+Product[0] = Product[0] + (Top[1] * Bot[0])
 Product[1] = Product[1] + Carry + (Top[1] * Bot[1])
 
 The logic works, I just need to expand it in a way that is self testing/expanding
 
 This works, I just need to put it together.
 
-}
+The larger number will always be on top after each multiplication
+
+Top[] = Product[]
+
+then you measure both the top & bottom
+
+TopSize = Top.size()
+BotSize = Bot.size()
+
+and you use these to run through the for loops again
+NOTE: Product[] Placemnet matches Top[] at start and increments by one! this avoids adding 0's
+
+Product[0] = Top[0] * Bot[0] 
+Product[1] = Carry + (Top[0] * Bot[1])
+Product[0] = Product[0] + (Top[1] * Bot[0])
+Product[1] = Product[1] + Carry + (Top[1] * Bot[1])
+
+625
+ 25
+ ---
   
 */
 int main {
