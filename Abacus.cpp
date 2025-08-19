@@ -19,7 +19,10 @@ if(carryover exists) {
   product[#] = product[#] + carryover;    will have to find a way to specify which item in product vector.
   carryover = NULL;
 
-  note to self: look up what the upper limit on items in a vector array would be.'
+Top[0] * Bot[0]
+Top[0] * Bot[1]
+
+
 }
   
 */
