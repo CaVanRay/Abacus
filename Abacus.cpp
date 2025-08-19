@@ -19,10 +19,10 @@ if(carryover exists) {
   product[#] = product[#] + carryover;    will have to find a way to specify which item in product vector.
   carryover = NULL;
 
-Top[0] * Bot[0]
-Top[0] * Bot[1]
-Top[1] * Bot[0]
-Top[1] * Bot[1]
+Product[0] = Top[0] * Bot[0] 
+Product[1] = Carry + (Top[0] * Bot[1])
+Product[0] = Product[0] + Carry + (Top[1] * Bot[0])
+Product[1] = Product[1] + Carry + (Top[1] * Bot[1])
 
 }
   
