@@ -55,6 +55,15 @@ Product[2] = Product[2] + Carry + (Top[1] * Bot[1])
 Product[2] = Product[2] + Carry + (Top[2] * Bot[0])
 Product[3] = Product[3] + carry + (Top[2] * Bot[1])
 
+at some point you have to test the sizes of Top[] & Bot[], and possibly Pro[].
+and I feel like there may have to be some resizing at some point, but I havent had a chance to work through it from start to finish
+
+Top.size() + Bot.size() + 1 = Pro[]'s size
+Even if it's a little bigger than the number I need to hold since: 00100 == 100, adding leading 0's changes nothing and I can remove that in the output stage.
+
+I think I have everything I need to do this, I'm just lacking the willpower at this point.
+
+I might be headed for stormy weather, :-/
 
 OOO:
       1  - int comes in
