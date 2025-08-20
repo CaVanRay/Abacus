@@ -56,9 +56,21 @@ Product[2] = Product[2] + Carry + (Top[2] * Bot[0])
 Product[3] = Product[3] + carry + (Top[2] * Bot[1])
 
 
-625
- 25
- ---
+OOO:
+      1  - int comes in
+      2  - set the top, bot, & size
+      3  - For loop on Size 
+      4  - set prolocation
+      5  - For loop on Top
+      6  - For loop on Bot
+      7  - Prolocation ++
+      8  - Close Bot For
+      9  - Close Top For
+      10 - Bot --
+      11 - Size --
+      12 - Top = Pro
+      13 - Close Size For
+      14 - Output final Pro
   
 */
 int main {
