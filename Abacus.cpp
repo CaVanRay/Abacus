@@ -65,7 +65,7 @@ I think I have everything I need to do this, I'm just lacking the willpower at t
 
 I might be headed for stormy weather, :-/
 
-OOO:
+OOO: (This is overly simplified and I will try to finish it tomorrow. If I don't, I will do it on saturday)
       1  - int comes in
       2  - set the top, bot, & size
       3  - For loop on Size 
@@ -77,7 +77,7 @@ OOO:
       9  - Close Top For
       10 - Bot -- (25 -> 24 -> 23 ->... you get the picture)
       11 - Size --
-      12 - Top = Pro
+      12 - Top = Pro (technically these could just be one item, but for clarity sake im using two)
       13 - Close Size For
       14 - Output final Pro
   
