@@ -72,10 +72,10 @@ OOO:
       4  - set prolocation (note: I need to run through the prolocation movement to make sure I have the pattern down)
       5  - For loop on Top (will always be the larger number)
       6  - For loop on Bot (Each number in Top will run through each number in Bot)
-      7  - Prolocation ++
+      7  - Prolocation ++ (The prolocation will update when the Bot number changes)
       8  - Close Bot For
       9  - Close Top For
-      10 - Bot --
+      10 - Bot -- (25 -> 24 -> 23 ->... you get the picture)
       11 - Size --
       12 - Top = Pro
       13 - Close Size For
