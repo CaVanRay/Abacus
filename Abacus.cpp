@@ -80,6 +80,8 @@ OOO: (This is overly simplified and I will try to finish it tomorrow. If I don't
       12 - Top = Pro (technically these could just be one item, but for clarity sake im using two)
       13 - Close Size For
       14 - Output final Pro
+
+I just need to work harder tomorrow
   
 */
 int main {
