@@ -62,8 +62,20 @@ I think I have everything I need to do this, I'm just lacking the willpower at t
 I might be headed for stormy weather, :-/
 
 Input: single integer
-Process: Multiply integer by intself and every integer down to 1 (factorial)
+Process: Multiply integer by itself and every integer down to 1 (factorial)
 Output: display the factorial of integer input
+
+Highest multiplication should be 9*9
+  so max digits handled at once is limited to 2 ( 9*9 = 81)
+    while(answer > 9)  {
+      answer = answer - 10;
+      carry = carry + 1;
+    }
+Each time the carry over is added to the product it needs to be wiped out
+    if(carry > 0)  {
+      product[#] = product[#] + carry;
+      carry = 0;
+    }
 
 OOO: (This is overly simplified and I will try to finish it tomorrow. If I don't, I will do it on saturday)
       1  - int comes in
