@@ -62,6 +62,7 @@ I think I have everything I need to do this, I'm just lacking the willpower at t
 I might be headed for stormy weather, :-/
 
 Input: single integer
+Process: Multiply integer by intself and every integer down to 1 (factorial)
 Output: display the factorial of integer input
 
 OOO: (This is overly simplified and I will try to finish it tomorrow. If I don't, I will do it on saturday)
