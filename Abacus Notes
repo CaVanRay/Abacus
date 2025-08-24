@@ -61,6 +61,9 @@ I think I have everything I need to do this, I'm just lacking the willpower at t
 
 I might be headed for stormy weather, :-/
 
+Input: single integer
+Output: display the factorial of integer input
+
 OOO: (This is overly simplified and I will try to finish it tomorrow. If I don't, I will do it on saturday)
       1  - int comes in
       2  - set the top, bot, & size
