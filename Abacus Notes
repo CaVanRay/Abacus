@@ -82,8 +82,8 @@ OOO: (This is overly simplified and I will try to finish it tomorrow. If I don't
       2  - set the top, bot, & size
       3  - For loop on Size 
       4  - set prolocation (note: I need to run through the prolocation movement to make sure I have the pattern down)
-      5  - For loop on Top (will always be the larger number)
-      6  - For loop on Bot (Each number in Top will run through each number in Bot)
+      5  - For loop on Top (will always be the larger number) NOTE: will not work with TopV.size(), it will only return number of items
+      6  - For loop on Bot (Each number in Top will run through each number in Bot) NOTE: will not work with BotV.size(), it will only return number of items
       7  - Prolocation ++ (The prolocation will update when the Bot number changes)
       8  - Close Bot For
       9  - Close Top For
