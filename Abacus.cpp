@@ -18,7 +18,7 @@ int main() {
     
     int tempMult, carry = 0;
 
-    for (int y = factInput; y >= 1; y--){
+    for (int y = (factInput - 1); y >= 1; y--){
 
         BotV.clear();
         toConvert = to_string(y);
@@ -42,24 +42,33 @@ int main() {
                 }
                 
             ProdV[proLocation] += tempMult;
+                while(ProdV[proLocation] > 9){
+                    ProdV[proLocation] -= 10;
+                    carry++;
+                }
             ProdV[proLocation + 1] += carry;
+                while(ProdV[proLocation + 1] > 9){
+                    ProdV[proLocation + 1] -= 10;
+                    ProdV[proLocation + 2] += 1;
+                }                
             carry = 0;
                 
             proLocation++;
             }
         }
-    
-        for (int x = ProdV.size(); x >= 0; x--){
-            if(ProdV[x] == 0){
-                ProdV.erase(ProdV.begin() + x);
-            }else break;
+        // I'm removing the leading zeros from the product
+        int newSize = ProdV.size();
+        while (newSize > 1 && ProdV[newSize - 1] == 0) {
+            newSize--;
         }
+        ProdV.resize(newSize);
+        
     TopV = ProdV; 
     ProdV.clear();
 
     }
     cout << "Product = ";
-    for (int k = (TopV.size()); k >= 0; k--){
+    for (int k = (TopV.size() - 1); k >= 0; k--){
         cout << TopV[k];
     } 
     return 0;
