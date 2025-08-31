@@ -1,4 +1,4 @@
-Abacus will be a piece of software for calculating large numbers.
+Abacus will be a piece of software for calculating large numbers. (Possibly a whole mathmatics library I can use in other programs I write? There are already other options that work way better, I just want to do it for fun)
 
 Right now i'm just working on basic number handling, but I hope to eventually slowly increase the types of calculations as well as automate the process of solving larger and more complicated equations/problems.
 
