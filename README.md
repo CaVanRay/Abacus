@@ -9,9 +9,13 @@ next step is to get it working with PEMDAS, then more technical functions like s
 Skip P for now, but the idea of parenthasis reminds me of something I thought up a long time ago, P-Values for disassembling equations in a program.
 
 Exponent -
+
 Multiplication - (basically already done)
+
 Division - 
+
 Addition -
+
 Subtraction -
 
 Square roots - 
