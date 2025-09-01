@@ -5,6 +5,9 @@
 using namespace std;
 
 int main() {
+
+    // Division is more complicated, it brings in decimals and fractional numbers
+    // this just made me realize people could try multiplying decimals/fractionals
     
     int factInput = 25;
     string toConvert;
