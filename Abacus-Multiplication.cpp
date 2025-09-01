@@ -14,7 +14,7 @@ int main() {
     long double multiInput2;
     int tempMult, carry = 0;
     string toConvert;
-    vector<int> TopV, BotV, ProdV;
+    vector<long double> TopV, BotV, ProdV;
 
     cout << "first multiplyer : " ;
     cin >> multiInput1;
