@@ -16,8 +16,8 @@ int main() {
     vector<int> TopV, BotV, ProdV;
 
     cout << "first multiplyer : " ;
-    cint >> multiInput1;
-    cout << endl << "second multiplyer : " ;
+    cin >> multiInput1;
+    cout << endl << "second multiplyer : ";
     cin >> multiInput2;
     
     // String/Digit Converter
@@ -71,9 +71,9 @@ TopV = ProdV;
 ProdV.clear();
 
     
-cout << "Product = ";
+cout << endl << "Product = ";
 for (int k = (TopV.size() - 1); k >= 0; k--){
     cout << TopV[k];
-} 
-return 0;
+}
+
 }
