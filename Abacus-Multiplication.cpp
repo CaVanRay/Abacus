@@ -6,8 +6,9 @@ using namespace std;
 
 int main() {
 
-    // later I need to come through and change the initial inputs
-    // as they are some smartass could come through and hand it 2 numbers that are already massive before multiplication
+    //Next up I need to find a way to handle decimals
+    //I think I may be able to set up some way to ignore the decimal element
+    //Either that or just have a designated decimal location and move the numbers around it.
     
     long double multiInput1;
     long double multiInput2;
