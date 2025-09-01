@@ -9,8 +9,8 @@ int main() {
     // later I need to come through and change the initial inputs
     // as they are some smartass could come through and hand it 2 numbers that are already massive before multiplication
     
-    int multiInput1;
-    int multiInput2;
+    long double multiInput1;
+    long double multiInput2;
     int tempMult, carry = 0;
     string toConvert;
     vector<int> TopV, BotV, ProdV;
