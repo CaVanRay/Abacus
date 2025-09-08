@@ -1,11 +1,27 @@
-This will be the same as factorial, I just need to bring in 2 numbers instead of 1, and remove the outer loop. - Done.
-**********************************************************************************************************************************
 
 Next I need to handle decimals, top two ideas are to either [test for and ignore] and [designate spot and work around]
 
+this is going to be more difficult than I thought...
+
+Options:
+
+Handle inside of Array
+[0][0][0][.][0][0][0]
+
+Designate decimal location without literally holding it
+
+       --V-- *Decimal goes here*
+[0][0][0]  [0][0][0]
+
+Or split pre-decimal & post-decimal numbers into 2 seperate arrays0
+
+Pre-D:  [0][0][0]
+Post-D: [0][0][0]
 
 
+**********************************************************************************************************************************
 
+This will be the same as factorial, I just need to bring in 2 numbers instead of 1, and remove the outer loop. - Done.
 
 **********************************************************************************************************************************
 Copying over my notes from making factorial program.
