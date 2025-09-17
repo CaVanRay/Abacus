@@ -6,6 +6,10 @@ using namespace std;
 
 int main() {
 
+
+    // Today is 9/16/25 - Tomorrow this is my main focus
+
+    
     //Next up I need to find a way to handle decimals
     //I think I may be able to set up some way to ignore the decimal element
     //Either that or just have a designated decimal location and move the numbers around it.
