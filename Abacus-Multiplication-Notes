@@ -1,3 +1,7 @@
+I need to look into decimal handling, I have no Idea where to start
+
+**********************************************************************************************************************************
+
 input( numA, numB){
 
 numA -> string -> TopV
