@@ -1,7 +1,11 @@
 input( numA, numB){
 
+numA -> string -> TopV
+numB -> string -> BotV
 
-}Output( numC)
+TopV[#] * BotV[#] = ProdV[#]
+
+} output( numC)
 
 **********************************************************************************************************************************
 This is still my focus, BUT i did learn some really useful stuff using ceiling() & floor()
