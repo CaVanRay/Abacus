@@ -7,9 +7,10 @@
 //***************************************
 // my own headers 
 #include "AbacusMenu.h"
-#include "AbacusMultiply"
-#include "AbacusDivide"
-#include "AbacusAddition"
-#include "AbacusSubtraction"
+#include "AbacusMultiply.h"
+#include "AbacusDivide.h"
+#include "AbacusAddition.h"
+#include "AbacusSubtraction.h"
+#include "AbacusVerifyInput.h"
 //***************************************
 #endif
