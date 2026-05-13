@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <string>
+#include "AbacusHeaders.h"
 
 using namespace std;
 
