@@ -1,6 +1,6 @@
 #include "Headers.h"
 
-int menu(){
+bool menu(bool cont){
   std::cout << "********** Main Menu **********" << std::endl:
   std::cout << " 1) - Addition" << std::endl;
   std::cout << " 2) - Subtraction" << std::endl;

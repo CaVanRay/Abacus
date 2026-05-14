@@ -8,7 +8,7 @@ int main(){
 
   while(cont){
   
-	  menu(cont);
+	  cont = menu(cont);
 
   }
   
