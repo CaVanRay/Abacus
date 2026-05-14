@@ -4,6 +4,7 @@
 // official libraries
 #include <iostream>
 #include <string>
+#include <vector>
 //***************************************
 // my own headers 
 #include "Menu.h"
