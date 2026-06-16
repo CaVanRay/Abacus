@@ -1,39 +1,8 @@
+/*********************************************************************
+Title: VerifyInput.cpp
+*********************************************************************/
+
 #include "Headers.h"
-
-// Functions to validate inputs
-
-//*********************************************************************
-
-std::string getString(const std::string& prompt){
-
-    // string to grab
-    std::string StringInput;
-
-    // peek into the buffer to see if a leftover \n exists
-    // if \n is there, it gets discarded
-    // if \n isn't there, nothing happens
-    if (std::cin.peek() == '\n') {
-        std::cin.ignore();
-    }
-
-    // will continuously loop until break
-    while (true) {
-        std::cout << prompt;
-
-        // Try reading a string
-        if (std::getline(std::cin, StringInput)) {
-            // on success, return value, breaking the loop
-            return StringInput;
-        }
-        // if it reaches here that means input failed
-        std::cout << "Input failure, please try again. \n";
-
-        // clear input 
-        std::cin.clear();
-
-    }
-
-}
 
 //*********************************************************************
 
