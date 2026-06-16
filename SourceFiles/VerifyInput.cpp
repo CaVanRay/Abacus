@@ -52,18 +52,23 @@ std::string getBigNumber(const std::string& prompt){
         std::cout << prompt;
 
         // Try reading a string
-        if (std::getline(std::cin, StringInput)) {
-
+        if (std::getline(std::cin, numberAsAString)) {
+            bool hasLetters = false;
             // check for letters
-            for (char c : StringInput){
-                if (std::isalpha(static_cast<unsigned char>(c)))
+            for (char c : numberAsAString){
+                if (std::isalpha(static_cast<unsigned char>(c))){
+                     hasLetters = true;
+                    std::cout << "Please enter numbers only." << std::endl;
                     break;
+                }
             }
             // on success, return value, breaking the loop
-            return StringInput;
+            if(!hasLetters || numberAsAString.empty()){
+            return numberAsAString;
+            }
         }
         // if it reaches here that means input failed
-        std::cout << "Input failure, please try again. \n";
+        std::cout << "Input failure, please try again." << std::endl;
 
         // clear input 
         std::cin.clear();
