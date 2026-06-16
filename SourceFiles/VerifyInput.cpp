@@ -39,7 +39,8 @@ std::string getString(const std::string& prompt){
 
 std::string getBigNumber(const std::string& prompt){
 
-
+    // numbers will be input as strings, but must be checked for letters
+    std::string numberAsAString;
 
 }
 
