@@ -47,6 +47,23 @@ std::string getBigNumber(const std::string& prompt){
         std::cin.ignore();
     }
 
+    // will continuously loop until break
+    while (true) {
+        std::cout << prompt;
+
+        // Try reading a string
+        if (std::getline(std::cin, StringInput)) {
+            // on success, return value, breaking the loop
+            return StringInput;
+        }
+        // if it reaches here that means input failed
+        std::cout << "Input failure, please try again. \n";
+
+        // clear input 
+        std::cin.clear();
+
+    }
+    
 }
 
 //*********************************************************************
