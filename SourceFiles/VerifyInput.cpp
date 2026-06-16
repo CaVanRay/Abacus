@@ -42,6 +42,11 @@ std::string getBigNumber(const std::string& prompt){
     // numbers will be input as strings, but must be checked for letters
     std::string numberAsAString;
 
+    // peek into the buffer to see if a leftover \n exists
+    if (std::cin.peek() == '\n') {
+        std::cin.ignore();
+    }
+
 }
 
 //*********************************************************************
