@@ -1,10 +1,15 @@
 /*********************************************************************
+
 Title: VerifyInput.cpp
 Author: Cavan Ray Theiss
 Date: 06/16/2026
 description:
     For verifying requested input is in the correct form.
     and continually requesting correct info until recieved.
+
+    so far we have numbers input as strings, single digit ints, & 
+    simple boolean yes/no
+    
 *********************************************************************/
 
 #include "Headers.h"
