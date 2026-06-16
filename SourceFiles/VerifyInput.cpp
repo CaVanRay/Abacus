@@ -56,7 +56,7 @@ std::string getBigNumber(const std::string& prompt){
             bool hasLetters = false;
             // check for letters
             for (char c : numberAsAString){
-                if (std::isalpha(static_cast<unsigned char>(c))){
+                if (!std::isdigit(static_cast<unsigned char>(c))){
                      hasLetters = true;
                     std::cout << "Please enter numbers only." << std::endl;
                     break;
