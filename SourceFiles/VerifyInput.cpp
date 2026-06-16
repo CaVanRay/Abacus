@@ -53,6 +53,12 @@ std::string getBigNumber(const std::string& prompt){
 
         // Try reading a string
         if (std::getline(std::cin, StringInput)) {
+
+            // check for letters
+            for (char c : StringInput){
+                if (std::isalpha(static_cast<unsigned char>(c)))
+                    break;
+            }
             // on success, return value, breaking the loop
             return StringInput;
         }
