@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cctype>
 //***************************************
 // my own headers 
 #include "Menu.h"
