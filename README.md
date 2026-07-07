@@ -14,5 +14,4 @@ Skip P for now, but the idea of parenthasis reminds me of something I thought up
 - [ ] Addition -
 - [ ] Subtraction -
 - [ ] Square roots - 
-
-Substitutions -
+- [ ] Substitutions -
