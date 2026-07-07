@@ -13,7 +13,6 @@ Skip P for now, but the idea of parenthasis reminds me of something I thought up
 - [ ] Division - 
 - [ ] Addition -
 - [ ] Subtraction -
-
-Square roots - 
+- [ ] Square roots - 
 
 Substitutions -
