@@ -8,7 +8,7 @@ next step is to get it working with PEMDAS, then more technical functions like s
 
 Skip P for now, but the idea of parenthasis reminds me of something I thought up a long time ago, P-Values for disassembling equations in a program.
 
-- [ ] Exponent -
+- [ ] Exponent - structure is in place but hardcoded to a single factorial
 - [ ] Multiplication - (basically already done)
 - [ ] Division - Currently in progress
 - [ ] Addition -
