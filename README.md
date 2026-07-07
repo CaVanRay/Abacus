@@ -10,8 +10,7 @@ Skip P for now, but the idea of parenthasis reminds me of something I thought up
 
 - [ ] Exponent -
 - [ ] Multiplication - (basically already done)
-
-Division - 
+- [ ] Division - 
 
 Addition -
 
