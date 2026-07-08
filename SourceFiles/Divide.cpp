@@ -85,5 +85,8 @@ int main(){
     if((divisorVector.size() == 1) && (divisorVector[0] == 0)){
         quotientString = "Undefined";
     }
+
+    std::cout << quotientString;
+    
     return 0;
 }
