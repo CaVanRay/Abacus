@@ -22,9 +22,9 @@ std::string getBigNumber(const std::string& prompt){
     std::string numberAsAString;
 
     // peek into the buffer to see if a leftover \n exists
-    if (std::cin.peek() == '\n') {
-        std::cin.ignore();
-    }
+    //if (std::cin.peek() == '\n') {
+    //    std::cin.ignore();
+    //}
 
     // will continuously loop until break
     while (true) {
