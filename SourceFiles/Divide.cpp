@@ -26,16 +26,34 @@ int main(){
     eventually this will just be another function
     */
 
-    string dividendString;
-    string divisorString;
+    // PREPARE VARIABLE FOR USE
+
+    std::string dividendString;
+    std::string divisorString;
     std::vector<int> dividendVector;
     std::vector<int> divisorVector;
     std::vector<int> quotientVector;
 
-    std::cout << endl;
+    // GET INPUT FOR NUMBERS TO USE
+
+    std::cout << std::endl;
     dividendString = getBigNumber("Please input number to divide: ");
-    std::cout << endl;
+    std::cout << std::endl;
     divisorString = getBigNumber("Please input number to divide by: ");
+
+    // CONVERT LARGE NUMBER STRINGS INTO VECTORS
+
+    for(char c : dividendString){
+        dividendVector.push_back(c - '0');
+    }
+    for(char c : divisorString){
+        divisorVector.push_back(c - '0');
+    }
+
+    for(int i : dividendVector)
+        std::cout << i;
+    for(int i : divisorVector)
+        std::cout << i;
 
     return 0;
 }
