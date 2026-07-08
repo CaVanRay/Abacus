@@ -1,5 +1,23 @@
-#include "Headers.h"
+/*
+Title: Abacus Dividing Function
+Author: Cavan Ray Theiss
+Contact: cavanrt@gmail.com
+Date: 07/08/2026
+Description:
 
+    this function takes as input two large numbers in the form of strings
+
+    it then converts those two strings into vector<int> types
+
+    once done it then uses the two vectors and divides them one single int 
+    at a time in order to create a 3rd vector<int> type quotient
+
+    the quotient vector will then be converted back into a string and 
+    returned back to the main function
+
+*/
+
+#include "Headers.h"
 
 int main(){
 
