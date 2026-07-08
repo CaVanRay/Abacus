@@ -76,5 +76,9 @@ int main(){
     
     std::cout << std::endl << "--------";
 
+    std::cout << std::endl << "QUOTIENT: ";
+
+    
+
     return 0;
 }
