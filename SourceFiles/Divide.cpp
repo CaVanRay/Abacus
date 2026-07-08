@@ -68,6 +68,8 @@ int main(){
         std::cout << i;
     
     std::cout << std::endl << "---------";
+
+    std::cout << std::endl << "DIVISOR: ";
     
     for(int i : divisorVector)
         std::cout << i;
