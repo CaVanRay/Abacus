@@ -87,6 +87,8 @@ int main(){
     }
 
     std::cout << quotientString;
+
+    std::cout << std::endl << std:: endl;
     
     return 0;
 }
