@@ -78,7 +78,9 @@ int main(){
 
     std::cout << std::endl << "QUOTIENT: ";
 
-    
+    if((dividendVector.size() == 1) && (dividendVector[0] == 0)){
+        quotientString = "0";
+    }    
 
     return 0;
 }
