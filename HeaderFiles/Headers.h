@@ -6,6 +6,7 @@
 #include <string>
 #include <vector>
 #include <cctype>
+#include <limits>
 //***************************************
 // my own headers 
 #include "Menu.h"
