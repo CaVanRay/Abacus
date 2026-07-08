@@ -73,6 +73,8 @@ int main(){
     
     for(int i : divisorVector)
         std::cout << i;
+    
+    std::cout << std::endl << "--------";
 
     return 0;
 }
