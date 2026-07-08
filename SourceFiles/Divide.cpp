@@ -81,6 +81,9 @@ int main(){
     if((dividendVector.size() == 1) && (dividendVector[0] == 0)){
         quotientString = "0";
     }    
-
+    
+    if((divisorVector.size() == 1) && (divisorVector[0] == 0)){
+        quotientString = "Undefined";
+    }
     return 0;
 }
