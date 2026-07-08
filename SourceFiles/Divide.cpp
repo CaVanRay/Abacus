@@ -41,6 +41,8 @@ int main(){
     std::cout << std::endl;
     divisorString = getBigNumber("Please input number to divide by: ");
 
+    // REMOVE LEADING 0'S
+
     // CONVERT LARGE NUMBER STRINGS INTO VECTORS
 
     for(char c : dividendString){
