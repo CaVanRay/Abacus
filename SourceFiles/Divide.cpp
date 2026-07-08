@@ -43,6 +43,10 @@ int main(){
 
     // REMOVE LEADING 0'S
 
+    while(dividendString[0] == '0' && dividendString.size() > 1){
+        dividendString.erase(0, 1);
+    }
+
     // CONVERT LARGE NUMBER STRINGS INTO VECTORS
 
     for(char c : dividendString){
