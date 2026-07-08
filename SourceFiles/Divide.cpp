@@ -52,6 +52,8 @@ int main(){
         divisorVector.push_back(c - '0');
     }
 
+    // TESTING
+    
     for(int i : dividendVector)
         std::cout << i;
     for(int i : divisorVector)
