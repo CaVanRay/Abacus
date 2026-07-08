@@ -66,8 +66,8 @@ int main(){
     
     for(int i : dividendVector)
         std::cout << i;
-
-
+    
+    std::cout << std::endl << "---------";
     
     for(int i : divisorVector)
         std::cout << i;
