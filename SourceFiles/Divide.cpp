@@ -61,6 +61,8 @@ int main(){
     }
 
     // TESTING
+
+    std::cout << std::endl << "DIVIDEND: ";
     
     for(int i : dividendVector)
         std::cout << i;
