@@ -52,9 +52,9 @@ int main(){
     //     dividendString.erase(0, 1);
     // }
 
-    while(divisorString[0] == '0' && divisorString.size() > 1){
-        divisorString.erase(0, 1);
-    }
+    // while(divisorString[0] == '0' && divisorString.size() > 1){
+    //     divisorString.erase(0, 1);
+    // }
 
     // CONVERT LARGE NUMBER STRINGS INTO VECTORS
 
