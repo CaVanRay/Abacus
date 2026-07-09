@@ -33,6 +33,7 @@ int main(){
     std::string divisorString;
     std::string quotientString;
     std::vector<int> dividendV;
+    std::vector<int> dividendDEC;
     std::vector<int> divisorVector;
     std::vector<int> quotientVector;
 
