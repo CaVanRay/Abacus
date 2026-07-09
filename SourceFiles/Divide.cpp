@@ -63,9 +63,10 @@ int main(){
             hitDEC = true;
             continue;
         }else if(hitDEC){
-            dividendDEC.push_back(c - 0);
+            dividendDEC.push_back(c - '0');
+        }else{
+            dividendV.push_back(c - '0');
         }
-        dividendVector.push_back(c - '0');
     }
     for(char c : divisorString){
         divisorVector.push_back(c - '0');
