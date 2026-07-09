@@ -76,7 +76,7 @@ int main(){
         }else if(hitDEC){
             divisorDEC.push_back(c - '0');
         }else{
-            
+            divisorV.push_back(c - '0');
         }
     }
 
