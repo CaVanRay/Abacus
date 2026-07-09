@@ -68,6 +68,7 @@ int main(){
             dividendV.push_back(c - '0');
         }
     }
+    hitDEC = false;
     for(char c : divisorString){
         divisorVector.push_back(c - '0');
     }
