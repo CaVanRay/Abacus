@@ -48,9 +48,9 @@ int main(){
 
     // REMOVE LEADING 0'S
 
-    while(dividendString[0] == '0' && dividendString.size() > 1){
-        dividendString.erase(0, 1);
-    }
+    // while(dividendString[0] == '0' && dividendString.size() > 1){
+    //     dividendString.erase(0, 1);
+    // }
 
     while(divisorString[0] == '0' && divisorString.size() > 1){
         divisorString.erase(0, 1);
