@@ -59,6 +59,10 @@ int main(){
     // CONVERT LARGE NUMBER STRINGS INTO VECTORS
 
     for(char c : dividendString){
+        if(c == '.'){
+            hitDEC = true;
+            continue;
+        }
         dividendVector.push_back(c - '0');
     }
     for(char c : divisorString){
