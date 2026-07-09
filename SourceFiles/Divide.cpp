@@ -70,7 +70,9 @@ int main(){
     }
     hitDEC = false;
     for(char c : divisorString){
-        divisorVector.push_back(c - '0');
+        if(c == '.'){
+            hitDEC = true;
+        }
     }
 
     // TESTING
