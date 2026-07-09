@@ -73,6 +73,8 @@ int main(){
         if(c == '.'){
             hitDEC = true;
             continue;
+        }else if(hitDEC){
+            divisorDEC.push_back(c - '0');
         }
     }
 
