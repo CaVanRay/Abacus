@@ -28,6 +28,7 @@ int main(){
 
     // PREPARE VARIABLE FOR USE
 
+    bool hitDEC = false;
     std::string dividendString;
     std::string divisorString;
     std::vector<int> dividendVector;
