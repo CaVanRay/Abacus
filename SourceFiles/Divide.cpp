@@ -72,6 +72,7 @@ int main(){
     for(char c : divisorString){
         if(c == '.'){
             hitDEC = true;
+            continue;
         }
     }
 
