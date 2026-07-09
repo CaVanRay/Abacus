@@ -62,6 +62,8 @@ int main(){
         if(c == '.'){
             hitDEC = true;
             continue;
+        }else if(hitDEC){
+            dividendDEC.push_back(c - 0);
         }
         dividendVector.push_back(c - '0');
     }
