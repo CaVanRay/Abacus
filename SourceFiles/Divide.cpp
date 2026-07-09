@@ -36,7 +36,7 @@ int main(){
     std::vector<int> dividendDEC;
     std::vector<int> divisorV;
     std::vector<int> divisorDEC;
-    std::vector<int> quotientVector;
+    std::vector<int> quotientV;
 
     // GET INPUT FOR NUMBERS TO USE
 
