@@ -79,6 +79,7 @@ int main(){
             divisorV.push_back(c - '0');
         }
     }
+    hitDEC = false;
 
     // TESTING
 
