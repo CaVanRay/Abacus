@@ -31,6 +31,7 @@ int main(){
     bool hitDEC = false;
     std::string dividendString;
     std::string divisorString;
+    std::string quotientString;
     std::vector<int> dividendVector;
     std::vector<int> divisorVector;
     std::vector<int> quotientVector;
