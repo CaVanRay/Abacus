@@ -120,7 +120,13 @@ int main(){
             dividendIsZero = false;
         }
     }
+    
     // DIVISOR
+    for(int i : divisorV){
+        if(i != 0){
+            divisorIsZero = false;
+        }
+    }
     
     std::cout << quotientString;
 
