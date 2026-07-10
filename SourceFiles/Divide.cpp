@@ -85,7 +85,7 @@ int main(){
 
     std::cout << std::endl << "DIVIDEND: ";
     
-    for(int i : dividendVector)
+    for(int i : dividendV)
         std::cout << i;
     
     std::cout << std::endl << "--------";
