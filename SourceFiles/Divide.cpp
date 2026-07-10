@@ -109,6 +109,7 @@ int main(){
     bool dividendIsZero = true;
     bool divisorIsZero = true;
 
+    // DIVIDEND
     for(int i : dividendV){
         if(i != 0){
             dividendIsZero = false;
@@ -119,6 +120,7 @@ int main(){
             dividendIsZero = false;
         }
     }
+    // DIVISOR
     
     std::cout << quotientString;
 
