@@ -108,6 +108,12 @@ int main(){
     // CHECK IF DIVIDEND &/OR DIVISOR EQUAL 0
     bool dividendIsZero = true;
     bool divisorIsZero = true;
+
+    for(int i : dividendV){
+        if(i != 0){
+            dividendIsZero = false;
+        }
+    }
     
     std::cout << quotientString;
 
