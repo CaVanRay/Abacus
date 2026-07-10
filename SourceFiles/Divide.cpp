@@ -95,7 +95,7 @@ int main(){
 
     std::cout << std::endl << "DIVISOR: ";
     
-    for(int i : divisorVector)
+    for(int i : divisorV)
         std::cout << i;
     
     std::cout << std::endl << "--------";
