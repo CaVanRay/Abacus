@@ -105,14 +105,10 @@ int main(){
 
     std::cout << std::endl << "QUOTIENT: ";
 
-    if((dividendVector.size() == 1) && (dividendVector[0] == 0)){
-        quotientString = "0";
-    }    
+    // CHECK IF DIVIDEND &/OR DIVISOR EQUAL 0
+    bool dividendIsZero = true;
+    bool divisorIsZero = true;
     
-    if((divisorVector.size() == 1) && (divisorVector[0] == 0)){
-        quotientString = "Undefined";
-    }
-
     std::cout << quotientString;
 
     std::cout << std::endl << std:: endl;
