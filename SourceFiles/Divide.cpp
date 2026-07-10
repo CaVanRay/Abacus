@@ -136,6 +136,9 @@ int main(){
     if(dividendIsZero){
         quotientString = "0";
     }
+    if(divisorIsZero){
+        quotientString = "Undefined"
+    }
     
     std::cout << quotientString;
 
