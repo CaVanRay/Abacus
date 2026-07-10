@@ -132,6 +132,10 @@ int main(){
             divisorIsZero = false;
         }
     }
+
+    if(dividendIsZero){
+        quotientString = "0";
+    }
     
     std::cout << quotientString;
 
