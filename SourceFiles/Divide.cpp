@@ -39,6 +39,7 @@ int main(){
     std::vector<int> quotientV;
     std::vector<int> quotientDEC;
 
+
     // GET INPUT FOR NUMBERS TO USE
 
     std::cout << std::endl;
@@ -47,19 +48,19 @@ int main(){
     divisorString = getBigNumber("Please input number to divide by: ");
 
     // REMOVE LEADING 0'S
+    
+    while(dividendString[0] == '0' && dividendString[1] != '.' && dividendString.size() > 2){
+        dividendString.erase(0, 1);
+    }
 
-    // while(dividendString[0] == '0' && dividendString.size() > 1){
-    //     dividendString.erase(0, 1);
-    // }
-
-    // while(divisorString[0] == '0' && divisorString.size() > 1){
-    //     divisorString.erase(0, 1);
-    // }
+    while(divisorString[0] == '0' && dividendString[1] != '.' && divisorString.size() > 2){
+        divisorString.erase(0, 1);
+    }
 
     // CONVERT LARGE NUMBER STRINGS INTO VECTORS
 
     for(char c : dividendString){
-        if(c == '.'){
+        if(c == '.' ){
             hitDEC = true;
             continue;
         }else if(hitDEC){
@@ -70,7 +71,7 @@ int main(){
     }
     hitDEC = false;
     for(char c : divisorString){
-        if(c == '.'){
+        if(c == '.' ){
             hitDEC = true;
             continue;
         }else if(hitDEC){
@@ -81,35 +82,79 @@ int main(){
     }
     hitDEC = false;
 
+
+
+    // CONVERT QUOTIENT VECTOR INTO STRING
+
+    if(quotientV.empty()){
+        quotientString = "00.";
+    }else{
+        quotientString.reserve(quotientV.size() * 3);
+        for(int i : quotientV){
+            quotientString += std::to_string(i);
+        }
+        quotientString += '.';
+    }
+
+    if(quotientDEC.empty()){
+        quotientString += "00";
+    }else{
+        quotientString.reserve(quotientDEC.size() + quotientString.size());
+        for(int i : quotientDEC){
+            quotientString += std::to_string(i);
+        }
+    }
+
     // TESTING
 
     std::cout << std::endl << "DIVIDEND: ";
-    
-    for(int i : dividendV)
-        std::cout << i;
+
+    if(dividendV.empty()){
+        std::cout << "00";
+    }else{
+        for(int i : dividendV)
+            std::cout << i;
+    }
     std::cout << '.';
-    for(int i : dividendDEC)
-        std::cout << i;
-    
+    if(dividendDEC.empty()){
+        std::cout << "00";
+    }else if(dividendDEC.size() == 1){
+        std::cout << dividendDEC[0] << "0";
+    }else{
+        for(int i : dividendDEC)
+            std::cout << i;
+    }
+
     std::cout << std::endl << "--------";
 
     std::cout << std::endl << "DIVISOR: ";
-    
-    for(int i : divisorV)
-        std::cout << i;
+
+    if(divisorV.empty()){
+        std::cout << "00";
+    }else{
+        for(int i : divisorV)
+            std::cout << i;
+    }
     std::cout << '.';
-    for(int i : divisorDEC)
-        std::cout << i;
-    
+    if(divisorDEC.empty()){
+        std::cout << "00";
+    }else if(divisorDEC.size() == 1){
+        std::cout << divisorDEC[0] << "0";
+    }else{
+        for(int i : divisorDEC)
+            std::cout << i;
+    }
+
     std::cout << std::endl << "--------";
 
     std::cout << std::endl << "QUOTIENT: ";
 
-    // CHECK IF DIVIDEND &/OR DIVISOR EQUAL 0
+
+
+    // Check if dividend is zero
     bool dividendIsZero = true;
     bool divisorIsZero = true;
 
-    // DIVIDEND
     for(int i : dividendV){
         if(i != 0){
             dividendIsZero = false;
@@ -120,8 +165,13 @@ int main(){
             dividendIsZero = false;
         }
     }
+
+    if (dividendIsZero) {
+        quotientString = "00.00";
+    }
+
+    // Check if divisor is zero
     
-    // DIVISOR
     for(int i : divisorV){
         if(i != 0){
             divisorIsZero = false;
@@ -133,16 +183,13 @@ int main(){
         }
     }
 
-    if(dividendIsZero){
-        quotientString = "0";
+    if (divisorIsZero) {
+        quotientString = "Undefined";
     }
-    if(divisorIsZero){
-        quotientString = "Undefined"
-    }
-    
+
     std::cout << quotientString;
 
     std::cout << std::endl << std:: endl;
-    
+
     return 0;
 }
