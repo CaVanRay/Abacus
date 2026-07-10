@@ -98,6 +98,8 @@ int main(){
     for(int i : divisorV)
         std::cout << i;
     std::cout << '.';
+    for(int i : divisorDEC)
+        std::cout << i;
     
     std::cout << std::endl << "--------";
 
