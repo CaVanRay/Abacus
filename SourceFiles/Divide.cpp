@@ -114,6 +114,11 @@ int main(){
             dividendIsZero = false;
         }
     }
+    for(int i : dividendDEC){
+        if(i != 0){
+            dividendIsZero = false;
+        }
+    }
     
     std::cout << quotientString;
 
