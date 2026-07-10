@@ -127,6 +127,11 @@ int main(){
             divisorIsZero = false;
         }
     }
+    for(int i : divisorDEC){
+        if(i != 0){
+            divisorIsZero = false;
+        }
+    }
     
     std::cout << quotientString;
 
