@@ -97,6 +97,7 @@ int main(){
     
     for(int i : divisorV)
         std::cout << i;
+    std::cout << '.';
     
     std::cout << std::endl << "--------";
 
