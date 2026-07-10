@@ -87,6 +87,7 @@ int main(){
     
     for(int i : dividendV)
         std::cout << i;
+    std::cout << '.';
     
     std::cout << std::endl << "--------";
 
